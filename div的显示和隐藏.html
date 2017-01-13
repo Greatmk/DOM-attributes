@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	#box{
+        		width: 100px;
+        		height: 100px;
+        		background-color: purple;
+        	}
+        	.show{
+        		display: block;
+        	}
+        	.hide{
+        		display: none;
+        	}
+        </style>
+    </head>
+    <body>
+    	<div id="box"></div>
+    	<input type="button" id="btn1" value="显示">
+    	<input type="button" id="btn2" value="隐藏">
+    	<script>
+    		var btn1 = document.getElementById('btn1');
+    		var btn2 = document.getElementById('btn2');
+    		var box = document.getElementById('box');
+
+    		btn2.onclick = function(){
+    			
+
+    			box.className = 'hide';
+    		}
+    		btn1.onclick = function(){
+			
+    			box.className = 'show';
+    		}
+    	</script>
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	.even{
+        		background-color: red;
+        	}
+        	.odd{
+        		background-color: purple;
+        	}
+        </style>
+    </head>
+    <body>
+    	<li>我是第1个标签</li>
+    	<li>我是第2个标签</li>
+    	<li>我是第3个标签</li>
+    	<li>我是第4个标签</li>
+    	<li>我是第5个标签</li>
+    	<li>我是第6个标签</li>
+    	<li>我是第7个标签</li>
+    	<li>我是第8个标签</li>
+    	<li>我是第9个标签</li>
+    	<li>我是第10个标签</li>
+
+    	<script>
+    		var lis = document.getElementsByTagName('li');
+
+    		for(var i=0; i<lis.length; i++){
+    			var li = lis[i];
+
+    			if(i % 2 == 0){
+    				li.className = 'even';
+    			}else{
+    				li.className = 'odd';
+    			}
+    		}
+    	</script>
+    </body>
+</html>

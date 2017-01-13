@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	.red{
+        		background-color: red;
+        	}
+        </style>
+    </head>
+    <body>
+    	<input type="button" value="按钮" id="btn">
+    	<script>
+    		var btn = document.getElementById('btn');
+    		btn.onclick = function(){
+    			this.className = 'red';
+    		}
+    	</script>
+    </body>
+</html>

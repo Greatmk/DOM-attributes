@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    	<img src="images/1.gif" alt="" id="img">
+    	<input type="button" value="切换图片" id="btn">
+		
+		<script>
+			var img = document.getElementById('img');
+			img.onclick = function(){
+				img.src = 'images/2.gif';
+			}
+			var btn = document.getElementById('btn');
+			btn.onclick = function(){
+				img.src = 'images/2.gif';
+			}
+		</script>
+    </body>
+</html>
